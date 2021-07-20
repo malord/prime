@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Precompile.cpp" />
+    <ClCompile Include="Base64Decoder.cpp" />
+    <ClCompile Include="Base64Encoder.cpp" />
+    <ClCompile Include="BinaryPropertyListReader.cpp" />
+    <ClCompile Include="BinaryPropertyListWriter.cpp" />
+    <ClCompile Include="CRC32.cpp" />
+    <ClCompile Include="CSVParser.cpp" />
+    <ClCompile Include="CSVWriter.cpp" />
+    <ClCompile Include="DeflateStream.cpp" />
+    <ClCompile Include="DictionarySettingsStore.cpp" />
+    <ClCompile Include="GZipFormat.cpp" />
+    <ClCompile Include="GZipWriter.cpp" />
+    <ClCompile Include="Hasher.cpp" />
+    <ClCompile Include="IconvReader.cpp" />
+    <ClCompile Include="IconvWrapper.cpp" />
+    <ClCompile Include="InflateStream.cpp" />
+    <ClCompile Include="JSONReader.cpp" />
+    <ClCompile Include="JSONWriter.cpp" />
+    <ClCompile Include="Lexer.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="PropertyListReader.cpp" />
+    <ClCompile Include="PropertyListWriter.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="SHA1.cpp" />
+    <ClCompile Include="SHA256.cpp" />
+    <ClCompile Include="StandardApp.cpp" />
+    <ClCompile Include="TextReader.cpp" />
+    <ClCompile Include="Value.cpp" />
+    <ClCompile Include="XMLNode.cpp" />
+    <ClCompile Include="XMLNodeReader.cpp" />
+    <ClCompile Include="XMLNodeWriter.cpp" />
+    <ClCompile Include="XMLPropertyListReader.cpp" />
+    <ClCompile Include="XMLPropertyListWriter.cpp" />
+    <ClCompile Include="XMLPullParser.cpp" />
+    <ClCompile Include="XMLWriter.cpp" />
+    <ClCompile Include="ZipFileSystem.cpp" />
+    <ClCompile Include="ZipFormat.cpp" />
+    <ClCompile Include="ZipReader.cpp" />
+    <ClCompile Include="ZipWriter.cpp" />
+    <ClCompile Include="TextEncoding.cpp" />
+    <ClCompile Include="Windows\RegistrySettingsStore.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ANSILog.cpp" />
+    <ClCompile Include="CallbackLog.cpp" />
+    <ClCompile Include="CommandLineRecoder.cpp" />
+    <ClCompile Include="CommandLineParser.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="ConsoleLog.cpp" />
+    <ClCompile Include="DateTime.cpp" />
+    <ClCompile Include="DowngradeLog.cpp" />
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="FileLoader.cpp" />
+    <ClCompile Include="FileLocations.cpp" />
+    <ClCompile Include="FileLog.cpp" />
+    <ClCompile Include="FileSystem.cpp" />
+    <ClCompile Include="TaskSystem.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="LoggingFileSystem.cpp" />
+    <ClCompile Include="LogRecorder.cpp" />
+    <ClCompile Include="LogThreader.cpp" />
+    <ClCompile Include="MemoryManager.cpp" />
+    <ClCompile Include="MultiFileSystem.cpp" />
+    <ClCompile Include="MultiLog.cpp" />
+    <ClCompile Include="MultiStream.cpp" />
+    <ClCompile Include="NetworkStream.cpp" />
+    <ClCompile Include="Path.cpp" />
+    <ClCompile Include="PrefixFileSystem.cpp" />
+    <ClCompile Include="PrefixLog.cpp" />
+    <ClCompile Include="ProcessBase.cpp" />
+    <ClCompile Include="RefCounting.cpp" />
+    <ClCompile Include="SignalSocket.cpp" />
+    <ClCompile Include="Socket.cpp" />
+    <ClCompile Include="SocketAddress.cpp" />
+    <ClCompile Include="SocketAddressParser.cpp" />
+    <ClCompile Include="SocketListener.cpp" />
+    <ClCompile Include="SocketStream.cpp" />
+    <ClCompile Include="StdioLog.cpp" />
+    <ClCompile Include="StdioStream.cpp" />
+    <ClCompile Include="StdioUtils.cpp" />
+    <ClCompile Include="Stream.cpp" />
+    <ClCompile Include="StreamBuffer.cpp" />
+    <ClCompile Include="StreamLoader.cpp" />
+    <ClCompile Include="StringStream.cpp" />
+    <ClCompile Include="Substream.cpp" />
+    <ClCompile Include="SystemFileSystem.cpp" />
+    <ClCompile Include="TempDirectory.cpp" />
+    <ClCompile Include="TempFile.cpp" />
+    <ClCompile Include="TextLog.cpp" />
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="ThreadPoolTaskSystem.cpp" />
+    <ClCompile Include="ThreadSafeStream.cpp" />
+    <ClCompile Include="UnclosableStream.cpp" />
+    <ClCompile Include="Emulated\EmulatedBarrier.cpp">
+      <Filter>Emulated</Filter>
+    </ClCompile>
+    <ClCompile Include="Emulated\EmulatedEvent.cpp">
+      <Filter>Emulated</Filter>
+    </ClCompile>
+    <ClCompile Include="Emulated\EmulatedReadWriteLock.cpp">
+      <Filter>Emulated</Filter>
+    </ClCompile>
+    <ClCompile Include="Emulated\EmulatedSemaphore.cpp">
+      <Filter>Emulated</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\MessageBoxLog.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsClock.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsCondition.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsConfig.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsDirectoryReader.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsDynamicLibrary.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsEvent.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsFile.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsFileLocations.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsFileStream.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsWildcardExpansion.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsLog.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsMutex.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsProcess.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsReadWriteLock.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsSemaphore.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsSocketSupport.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsTerminationHandler.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsThread.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\WindowsThreadSpecificData.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="SeekAvoidingStream.cpp" />
+    <ClCompile Include="StreamLog.cpp" />
+    <ClCompile Include="Windows\WindowsSecureRNG.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Emulated\EmulatedWildcardExpansion.cpp">
+      <Filter>Emulated</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskQueue.cpp" />
+    <ClCompile Include="Data.cpp" />
+    <ClCompile Include="OSX\GCDTaskQueue.cpp">
+      <Filter>OSX</Filter>
+    </ClCompile>
+    <ClCompile Include="OSX\GCDTaskSystem.cpp">
+      <Filter>OSX</Filter>
+    </ClCompile>
+    <ClCompile Include="OSX\OSXCPUUsage.cpp">
+      <Filter>OSX</Filter>
+    </ClCompile>
+    <ClCompile Include="Pthreads\PthreadsCondition.cpp">
+      <Filter>Pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="Pthreads\PthreadsMutex.cpp">
+      <Filter>Pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="Pthreads\PthreadsReadWriteLock.cpp">
+      <Filter>Pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="Pthreads\PthreadsRecursiveTimedMutex.cpp">
+      <Filter>Pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="Pthreads\PthreadsSemaphore.cpp">
+      <Filter>Pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="Pthreads\PthreadsThread.cpp">
+      <Filter>Pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="Pthreads\PthreadsThreadSpecificData.cpp">
+      <Filter>Pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="Pthreads\PthreadsTime.cpp">
+      <Filter>Pthreads</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixClock.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixCloseOnExec.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixDirectoryReader.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixDynamicLibrary.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixFile.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixFileLocations.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixFileProperties.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixFileStream.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixWildcardExpansion.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixLog.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixProcess.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixSecureRNG.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixSocketSupport.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Unix\UnixTerminationHandler.cpp">
+      <Filter>Unix</Filter>
+    </ClCompile>
+    <ClCompile Include="Convert.cpp" />
+    <ClCompile Include="NumberParsing.cpp" />
+    <ClCompile Include="StringUtils.cpp" />
+    <ClCompile Include="LogStream.cpp" />
+    <ClCompile Include="ChunkedReader.cpp" />
+    <ClCompile Include="ChunkedWriter.cpp" />
+    <ClCompile Include="Database.cpp" />
+    <ClCompile Include="Decimal.cpp" />
+    <ClCompile Include="DirectHTTPConnection.cpp" />
+    <ClCompile Include="HTTP.cpp" />
+    <ClCompile Include="HTTPConnection.cpp" />
+    <ClCompile Include="HTTPFileServer.cpp" />
+    <ClCompile Include="HTTPHeaderBuilder.cpp" />
+    <ClCompile Include="HTTPMultiSocketServer.cpp" />
+    <ClCompile Include="HTTPParser.cpp" />
+    <ClCompile Include="HTTPServer.cpp" />
+    <ClCompile Include="HTTPSettingsSessionManager.cpp" />
+    <ClCompile Include="HTTPSocketServer.cpp" />
+    <ClCompile Include="MIMETypes.cpp" />
+    <ClCompile Include="MySQLDatabase.cpp" />
+    <ClCompile Include="OpenSSLAES.cpp" />
+    <ClCompile Include="OpenSSLContext.cpp" />
+    <ClCompile Include="OpenSSLDirectHTTPConnection.cpp" />
+    <ClCompile Include="OpenSSLStream.cpp" />
+    <ClCompile Include="OpenSSLSupport.cpp" />
+    <ClCompile Include="QuotedPrintableDecoder.cpp" />
+    <ClCompile Include="QuotedPrintableEncoder.cpp" />
+    <ClCompile Include="ResponseFileLoader.cpp" />
+    <ClCompile Include="SMTPConnection.cpp" />
+    <ClCompile Include="SQLiteDatabase.cpp" />
+    <ClCompile Include="SystemMemoryManager.cpp" />
+    <ClCompile Include="UnixTime.cpp" />
+    <ClCompile Include="URL.cpp" />
+    <ClCompile Include="UTF8RewindSupport.cpp" />
+    <ClCompile Include="XMLExpat.cpp" />
+    <ClCompile Include="Windows\WindowsFileProperties.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="OSX\OSXClock.cpp">
+      <Filter>OSX</Filter>
+    </ClCompile>
+    <ClCompile Include="Android\AndroidLog.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="Android\JavaInterop.cpp">
+      <Filter>Android</Filter>
+    </ClCompile>
+    <ClCompile Include="Components.cpp" />
+    <ClCompile Include="Archive.cpp" />
+    <ClCompile Include="ArchiveFileSystem.cpp" />
+    <ClCompile Include="ArchiveReader.cpp" />
+    <ClCompile Include="ArchiveWriter.cpp" />
+    <ClCompile Include="DirectSocketConnector.cpp" />
+    <ClCompile Include="SocketConnector.cpp" />
+    <ClCompile Include="SOCKS5SocketConnector.cpp" />
+    <ClCompile Include="SOCKS5Stream.cpp" />
+    <ClCompile Include="ZipArchiveReader.cpp" />
+    <ClCompile Include="SOCKS5Server.cpp" />
+    <ClCompile Include="CSVTable.cpp" />
+    <ClCompile Include="MultipartParser.cpp" />
+    <ClCompile Include="MultiSocketConnector.cpp" />
+    <ClCompile Include="ORM.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Precompile.h" />
+    <ClInclude Include="Adler32.h" />
+    <ClInclude Include="Base64Decoder.h" />
+    <ClInclude Include="Base64Encoder.h" />
+    <ClInclude Include="BinaryPropertyListReader.h" />
+    <ClInclude Include="BinaryPropertyListWriter.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="CRC32.h" />
+    <ClInclude Include="CSVParser.h" />
+    <ClInclude Include="CSVWriter.h" />
+    <ClInclude Include="DeflateStream.h" />
+    <ClInclude Include="Dictionary.h" />
+    <ClInclude Include="DictionarySettingsStore.h" />
+    <ClInclude Include="DJB2Hash.h" />
+    <ClInclude Include="PropertyListFileWriter.h" />
+    <ClInclude Include="FileSettingsStore.h" />
+    <ClInclude Include="Fletcher8.h" />
+    <ClInclude Include="GZipFormat.h" />
+    <ClInclude Include="GZipWriter.h" />
+    <ClInclude Include="Hasher.h" />
+    <ClInclude Include="HashStream.h" />
+    <ClInclude Include="IconvReader.h" />
+    <ClInclude Include="IconvWrapper.h" />
+    <ClInclude Include="InflateStream.h" />
+    <ClInclude Include="JSONReader.h" />
+    <ClInclude Include="JSONWriter.h" />
+    <ClInclude Include="Lexer.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="MersenneTwister.h" />
+    <ClInclude Include="OneAtATimeHash.h" />
+    <ClInclude Include="ParkMillerRNG.h" />
+    <ClInclude Include="PropertyListReader.h" />
+    <ClInclude Include="PropertyListWriter.h" />
+    <ClInclude Include="Range.h" />
+    <ClInclude Include="RNGBase.h" />
+    <ClInclude Include="SDBMHash.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="SHA1.h" />
+    <ClInclude Include="SHA256.h" />
+    <ClInclude Include="StandardApp.h" />
+    <ClInclude Include="TextReader.h" />
+    <ClInclude Include="Value.h" />
+    <ClInclude Include="XMLNode.h" />
+    <ClInclude Include="XMLNodeReader.h" />
+    <ClInclude Include="XMLNodeWriter.h" />
+    <ClInclude Include="XMLPropertyListReader.h" />
+    <ClInclude Include="XMLPropertyListWriter.h" />
+    <ClInclude Include="XMLPullParser.h" />
+    <ClInclude Include="XMLWriter.h" />
+    <ClInclude Include="ZipFileSystem.h" />
+    <ClInclude Include="ZipFormat.h" />
+    <ClInclude Include="ZipReader.h" />
+    <ClInclude Include="ZipWriter.h" />
+    <ClInclude Include="TextEncoding.h" />
+    <ClInclude Include="Windows\RegistrySettingsStore.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="2D.h" />
+    <ClInclude Include="ANSIEscapeParser.h" />
+    <ClInclude Include="ANSIEscapes.h" />
+    <ClInclude Include="ANSILog.h" />
+    <ClInclude Include="Array.h" />
+    <ClInclude Include="Barrier.h" />
+    <ClInclude Include="Callback.h" />
+    <ClInclude Include="CallbackLog.h" />
+    <ClInclude Include="CircularQueue.h" />
+    <ClInclude Include="Clocks.h" />
+    <ClInclude Include="Colour.h" />
+    <ClInclude Include="CommandLineRecoder.h" />
+    <ClInclude Include="CommandLineWildcardExpansion.h" />
+    <ClInclude Include="CommandLineParser.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Condition.h" />
+    <ClInclude Include="ConsoleLog.h" />
+    <ClInclude Include="DateTime.h" />
+    <ClInclude Include="DirectoryReader.h" />
+    <ClInclude Include="DirectoryReaderBase.h" />
+    <ClInclude Include="DirectoryLoader.h" />
+    <ClInclude Include="DoubleLinkList.h" />
+    <ClInclude Include="DowngradeLog.h" />
+    <ClInclude Include="DynamicLibrary.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="File.h" />
+    <ClInclude Include="FileLoader.h" />
+    <ClInclude Include="FileLocations.h" />
+    <ClInclude Include="FileLog.h" />
+    <ClInclude Include="FileProperties.h" />
+    <ClInclude Include="FileStream.h" />
+    <ClInclude Include="FileSystem.h" />
+    <ClInclude Include="WildcardExpansion.h" />
+    <ClInclude Include="WildcardExpansionBase.h" />
+    <ClInclude Include="WildcardExpansionLoader.h" />
+    <ClInclude Include="TaskQueue.h" />
+    <ClInclude Include="TaskSystem.h" />
+    <ClInclude Include="DefaultTaskSystem.h" />
+    <ClInclude Include="Lock.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="LoggingFileSystem.h" />
+    <ClInclude Include="LogRecorder.h" />
+    <ClInclude Include="LogThreader.h" />
+    <ClInclude Include="MemoryLeakDetector.h" />
+    <ClInclude Include="MemoryManager.h" />
+    <ClInclude Include="MultiFileSystem.h" />
+    <ClInclude Include="MultiLog.h" />
+    <ClInclude Include="MultiStream.h" />
+    <ClInclude Include="Mutex.h" />
+    <ClInclude Include="NetworkStream.h" />
+    <ClInclude Include="Oniguruma.h" />
+    <ClInclude Include="Path.h" />
+    <ClInclude Include="Platform.h" />
+    <ClInclude Include="PrefixFileSystem.h" />
+    <ClInclude Include="PrefixLog.h" />
+    <ClInclude Include="ProcessBase.h" />
+    <ClInclude Include="Processes.h" />
+    <ClInclude Include="ReadWriteLock.h" />
+    <ClInclude Include="RefCounting.h" />
+    <ClInclude Include="Regex.h" />
+    <ClInclude Include="ScopedLock.h" />
+    <ClInclude Include="ScopedPtr.h" />
+    <ClInclude Include="TaskSystemSelector.h" />
+    <ClInclude Include="Semaphore.h" />
+    <ClInclude Include="SharedPtr.h" />
+    <ClInclude Include="SignalSocket.h" />
+    <ClInclude Include="Socket.h" />
+    <ClInclude Include="SocketAddress.h" />
+    <ClInclude Include="SocketAddressParser.h" />
+    <ClInclude Include="SocketListener.h" />
+    <ClInclude Include="SocketStream.h" />
+    <ClInclude Include="SocketSupport.h" />
+    <ClInclude Include="Spew.h" />
+    <ClInclude Include="Spew2.h" />
+    <ClInclude Include="DefaultLog.h" />
+    <ClInclude Include="StdioLog.h" />
+    <ClInclude Include="StdioStream.h" />
+    <ClInclude Include="StdioUtils.h" />
+    <ClInclude Include="Stopwatch.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="StreamBuffer.h" />
+    <ClInclude Include="StreamLoader.h" />
+    <ClInclude Include="StringView.h" />
+    <ClInclude Include="StringSearching.h" />
+    <ClInclude Include="StringStream.h" />
+    <ClInclude Include="Substream.h" />
+    <ClInclude Include="SystemFileSystem.h" />
+    <ClInclude Include="TempDirectory.h" />
+    <ClInclude Include="TempFile.h" />
+    <ClInclude Include="TerminationHandler.h" />
+    <ClInclude Include="TextLog.h" />
+    <ClInclude Include="Thread.h" />
+    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="ThreadPoolTaskSystem.h" />
+    <ClInclude Include="ThreadSafeStream.h" />
+    <ClInclude Include="ThreadSpecificData.h" />
+    <ClInclude Include="Timeout.h" />
+    <ClInclude Include="UID.h" />
+    <ClInclude Include="UIDCast.h" />
+    <ClInclude Include="UnclosableStream.h" />
+    <ClInclude Include="Emulated\EmulatedBarrier.h">
+      <Filter>Emulated</Filter>
+    </ClInclude>
+    <ClInclude Include="Emulated\EmulatedEvent.h">
+      <Filter>Emulated</Filter>
+    </ClInclude>
+    <ClInclude Include="Emulated\EmulatedReadWriteLock.h">
+      <Filter>Emulated</Filter>
+    </ClInclude>
+    <ClInclude Include="Emulated\EmulatedSemaphore.h">
+      <Filter>Emulated</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\InitialiseCOM.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\MessageBoxLog.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsCondition.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsConfig.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsCriticalSection.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsDirectoryReader.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsDynamicLibrary.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsEvent.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsFileStream.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsWildcardExpansion.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsLog.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsMutex.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsNonRecursiveMutex.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsProcess.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsReadWriteLock.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsSemaphore.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsSocketSupport.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsTerminationHandler.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsThread.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsThreadSpecificData.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WndLibLog.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="CPUUsage.h" />
+    <ClInclude Include="SecureRNG.h" />
+    <ClInclude Include="SeekAvoidingStream.h" />
+    <ClInclude Include="StreamLog.h" />
+    <ClInclude Include="Windows\WindowsSecureRNG.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Emulated\EmulatedWildcardExpansion.h">
+      <Filter>Emulated</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayView.h" />
+    <ClInclude Include="NotNull.h" />
+    <ClInclude Include="Data.h" />
+    <ClInclude Include="OSX\GCDConfig.h">
+      <Filter>OSX</Filter>
+    </ClInclude>
+    <ClInclude Include="OSX\GCDTaskQueue.h">
+      <Filter>OSX</Filter>
+    </ClInclude>
+    <ClInclude Include="OSX\GCDTaskSystem.h">
+      <Filter>OSX</Filter>
+    </ClInclude>
+    <ClInclude Include="OSX\iOSDevice.h">
+      <Filter>OSX</Filter>
+    </ClInclude>
+    <ClInclude Include="OSX\OSXCPUUsage.h">
+      <Filter>OSX</Filter>
+    </ClInclude>
+    <ClInclude Include="OSX\ScopedAutoreleasePool.h">
+      <Filter>OSX</Filter>
+    </ClInclude>
+    <ClInclude Include="OSX\UserDefaultsSettingsStore.h">
+      <Filter>OSX</Filter>
+    </ClInclude>
+    <ClInclude Include="OSX\ValueNSObject.h">
+      <Filter>OSX</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsCondition.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsMutex.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsNonRecursiveMutex.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsReadWriteLock.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsRecursiveMutex.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsRecursiveTimedMutex.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsSemaphore.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsThread.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsThreadSpecificData.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Pthreads\PthreadsTime.h">
+      <Filter>Pthreads</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixCloseOnExec.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixDirectoryReader.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixDynamicLibrary.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixFileProperties.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixFileStream.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixWildcardExpansion.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixLog.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixProcess.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixSecureRNG.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixSocketSupport.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixTerminationHandler.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="Convert.h" />
+    <ClInclude Include="ByteOrder.h" />
+    <ClInclude Include="ImpliedComparisonOperators.h" />
+    <ClInclude Include="NumberUtils.h" />
+    <ClInclude Include="NumberParsing.h" />
+    <ClInclude Include="StringUtils.h" />
+    <ClInclude Include="Templates.h" />
+    <ClInclude Include="UnrolledArrays.h" />
+    <ClInclude Include="Optional.h" />
+    <ClInclude Include="OpenMode.h" />
+    <ClInclude Include="Cache.h" />
+    <ClInclude Include="LogStream.h" />
+    <ClInclude Include="ChunkedReader.h" />
+    <ClInclude Include="ChunkedWriter.h" />
+    <ClInclude Include="Database.h" />
+    <ClInclude Include="Decimal.h" />
+    <ClInclude Include="DirectHTTPConnection.h" />
+    <ClInclude Include="FrameTimer.h" />
+    <ClInclude Include="HTTP.h" />
+    <ClInclude Include="HTTPConnection.h" />
+    <ClInclude Include="HTTPFileServer.h" />
+    <ClInclude Include="HTTPHeaderBuilder.h" />
+    <ClInclude Include="HTTPMultiSocketServer.h" />
+    <ClInclude Include="HTTPParser.h" />
+    <ClInclude Include="HTTPServer.h" />
+    <ClInclude Include="HTTPSettingsSessionManager.h" />
+    <ClInclude Include="HTTPSocketServer.h" />
+    <ClInclude Include="MIMETypes.h" />
+    <ClInclude Include="MySQLDatabase.h" />
+    <ClInclude Include="OpenSSLAES.h" />
+    <ClInclude Include="OpenSSLContext.h" />
+    <ClInclude Include="OpenSSLDirectHTTPConnection.h" />
+    <ClInclude Include="OpenSSLStream.h" />
+    <ClInclude Include="OpenSSLSupport.h" />
+    <ClInclude Include="QuotedPrintableDecoder.h" />
+    <ClInclude Include="QuotedPrintableEncoder.h" />
+    <ClInclude Include="ResponseFileLoader.h" />
+    <ClInclude Include="SMTPConnection.h" />
+    <ClInclude Include="SQLiteDatabase.h" />
+    <ClInclude Include="SystemMemoryManager.h" />
+    <ClInclude Include="UnixTime.h" />
+    <ClInclude Include="UnownedPtr.h" />
+    <ClInclude Include="URL.h" />
+    <ClInclude Include="UTF8RewindSupport.h" />
+    <ClInclude Include="XMLExpat.h" />
+    <ClInclude Include="Windows\WindowsClock.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\WindowsFileProperties.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Unix\UnixClock.h">
+      <Filter>Unix</Filter>
+    </ClInclude>
+    <ClInclude Include="OSX\OSXClock.h">
+      <Filter>OSX</Filter>
+    </ClInclude>
+    <ClInclude Include="Android\AndroidLog.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="Android\JavaInterop.h">
+      <Filter>Android</Filter>
+    </ClInclude>
+    <ClInclude Include="Components.h" />
+    <ClInclude Include="FunctionRef.h" />
+    <ClInclude Include="Archive.h" />
+    <ClInclude Include="ArchiveFileSystem.h" />
+    <ClInclude Include="ArchiveReader.h" />
+    <ClInclude Include="ArchiveWriter.h" />
+    <ClInclude Include="DirectSocketConnector.h" />
+    <ClInclude Include="SocketConnector.h" />
+    <ClInclude Include="SOCKS5SocketConnector.h" />
+    <ClInclude Include="SOCKS5Stream.h" />
+    <ClInclude Include="ZipArchiveReader.h" />
+    <ClInclude Include="SOCKS5Server.h" />
+    <ClInclude Include="CSVTable.h" />
+    <ClInclude Include="MultipartParser.h" />
+    <ClInclude Include="MultiSocketConnector.h" />
+    <ClInclude Include="ORM.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="OSX">
+      <UniqueIdentifier>{3dd168f8-581c-45df-8ac7-7a4240d3ba62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{0fd089b9-6438-4a29-9734-3105a700de77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Emulated">
+      <UniqueIdentifier>{2a579369-1488-4c4e-b631-5c43eab01a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pthreads">
+      <UniqueIdentifier>{f9592aef-b343-42c3-a24d-4c2b2c839e69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unix">
+      <UniqueIdentifier>{b9b28bb9-a377-425b-a225-74141ac4cf0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Android">
+      <UniqueIdentifier>{53ac97d4-6a8c-42e6-9f75-518186f540cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OSX\iOSFileLocations.mm">
+      <Filter>OSX</Filter>
+    </None>
+    <None Include="OSX\MacFileLocations.mm">
+      <Filter>OSX</Filter>
+    </None>
+    <None Include="OSX\UserDefaultsSettingsStore.mm">
+      <Filter>OSX</Filter>
+    </None>
+    <None Include="OSX\ValueNSObject.mm">
+      <Filter>OSX</Filter>
+    </None>
+  </ItemGroup>
+</Project>

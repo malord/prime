@@ -121,6 +121,7 @@ bool HTTPFileServer::sendFile(Request& request, Response& response, const char* 
         sendOptions.setAlreadyCompressed(true);
         sendOptions.setRawDeflated(true);
         sendOptions.setCRC32(fileProperties.crc32.value());
+        sendOptions.setUncompressedSize(static_cast<uint32_t>(fileProperties.size.value()));
 
     } else {
         // openBufferSequential is required for maximum performance from Windows' TransmitFile API.

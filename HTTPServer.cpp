@@ -1104,7 +1104,7 @@ bool HTTPServer::Response::sendStream(Stream* stream, Stream::Offset size, Log* 
             log->trace("Sending gzip footer.");
         }
 
-        if (!sendGZipFooter(_stream, (uint32_t)size, sendOptions.getCRC32(), log)) {
+        if (!sendGZipFooter(_stream, sendOptions.getUncompressedSize(), sendOptions.getCRC32(), log)) {
             return false;
         }
     }
@@ -1126,6 +1126,7 @@ bool HTTPServer::Response::sendGZipFooter(Stream* stream, uint32_t originalSize,
     footer.originalSize = (uint32_t)originalSize;
     footer.crc32 = crc32;
     char footerBytes[GZip::Footer::encodedSize];
+    footer.encode(footerBytes);
     return stream->writeExact(footerBytes, sizeof(footerBytes), log);
 }
 

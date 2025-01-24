@@ -66,7 +66,6 @@ public:
     void setEncodedText(bool value)
     {
         _textNodeType = value ? TextNodeEncoded : TextNodeText;
-        ;
     }
 
     const XMLNode* getParent() const { return _parent; }

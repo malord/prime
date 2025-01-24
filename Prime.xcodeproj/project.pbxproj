@@ -1239,6 +1239,12 @@
 		4DB6C1CB1C9065EF0093EB4D /* LogStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB6C1C91C9065EF0093EB4D /* LogStream.h */; };
 		4DB6C1CC1C9065F20093EB4D /* LogStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6C1C81C9065EF0093EB4D /* LogStream.cpp */; };
 		4DB6C1CD1C9065F20093EB4D /* LogStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6C1C81C9065EF0093EB4D /* LogStream.cpp */; };
+		4DB7CDEE2711E4AB002FBE35 /* StringLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7CDEC2711E4AB002FBE35 /* StringLog.cpp */; };
+		4DB7CDEF2711E4AB002FBE35 /* StringLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7CDEC2711E4AB002FBE35 /* StringLog.cpp */; };
+		4DB7CDF02711E4AB002FBE35 /* StringLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB7CDEC2711E4AB002FBE35 /* StringLog.cpp */; };
+		4DB7CDF12711E4AB002FBE35 /* StringLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB7CDED2711E4AB002FBE35 /* StringLog.h */; };
+		4DB7CDF22711E4AB002FBE35 /* StringLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB7CDED2711E4AB002FBE35 /* StringLog.h */; };
+		4DB7CDF32711E4AB002FBE35 /* StringLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DB7CDED2711E4AB002FBE35 /* StringLog.h */; };
 		4DB95ADA1B7F6B1000D2F239 /* SeekAvoidingStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB95AD81B7F6B1000D2F239 /* SeekAvoidingStream.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4DB95ADB1B7F6B1000D2F239 /* SeekAvoidingStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB95AD81B7F6B1000D2F239 /* SeekAvoidingStream.cpp */; };
 		4DB95ADC1B7F6B1000D2F239 /* SeekAvoidingStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DB95AD81B7F6B1000D2F239 /* SeekAvoidingStream.cpp */; };
@@ -1818,6 +1824,8 @@
 		4DB3F0E0265520CF00FFDE2F /* LogLevelCounter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogLevelCounter.cpp; sourceTree = "<group>"; };
 		4DB6C1C81C9065EF0093EB4D /* LogStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LogStream.cpp; sourceTree = "<group>"; };
 		4DB6C1C91C9065EF0093EB4D /* LogStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogStream.h; sourceTree = "<group>"; };
+		4DB7CDEC2711E4AB002FBE35 /* StringLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringLog.cpp; sourceTree = "<group>"; };
+		4DB7CDED2711E4AB002FBE35 /* StringLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringLog.h; sourceTree = "<group>"; };
 		4DB95AD81B7F6B1000D2F239 /* SeekAvoidingStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SeekAvoidingStream.cpp; sourceTree = "<group>"; };
 		4DB95AD91B7F6B1000D2F239 /* SeekAvoidingStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeekAvoidingStream.h; sourceTree = "<group>"; };
 		4DC3785C19E99CBB001D6DE3 /* SHA256.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SHA256.cpp; sourceTree = "<group>"; };
@@ -1943,8 +1951,6 @@
 		32C88DFF0371C24200C91783 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				4DB3F0E0265520CF00FFDE2F /* LogLevelCounter.cpp */,
-				4DB3F0DF265520CF00FFDE2F /* LogLevelCounter.h */,
 				4D549CB11CE0AA4F009EB624 /* 2D.h */,
 				4D549CB21CE0AA4F009EB624 /* Adler32.h */,
 				4D2A38F41CF511ED009DCC3A /* Android */,
@@ -2098,6 +2104,8 @@
 				4D6048AA1A6525DB00F9D8C5 /* Log.h */,
 				4D6048AB1A6525DB00F9D8C5 /* LoggingFileSystem.cpp */,
 				4D6048AC1A6525DB00F9D8C5 /* LoggingFileSystem.h */,
+				4DB3F0E0265520CF00FFDE2F /* LogLevelCounter.cpp */,
+				4DB3F0DF265520CF00FFDE2F /* LogLevelCounter.h */,
 				4D6048AD1A6525DB00F9D8C5 /* LogRecorder.cpp */,
 				4D6048AE1A6525DB00F9D8C5 /* LogRecorder.h */,
 				4D44AB8922BA34D80077387F /* LogStack.cpp */,
@@ -2244,6 +2252,8 @@
 				4D6048F31A6525DB00F9D8C5 /* StreamLoader.h */,
 				4D7AF9E91AADE2F400F51CF2 /* StreamLog.cpp */,
 				4D7AF9EA1AADE2F400F51CF2 /* StreamLog.h */,
+				4DB7CDEC2711E4AB002FBE35 /* StringLog.cpp */,
+				4DB7CDED2711E4AB002FBE35 /* StringLog.h */,
 				4D6048F91A6525DB00F9D8C5 /* StringSearching.h */,
 				4D6048FA1A6525DB00F9D8C5 /* StringStream.cpp */,
 				4D6048FB1A6525DB00F9D8C5 /* StringStream.h */,
@@ -2727,6 +2737,7 @@
 				4D6049AE1A6525DB00F9D8C5 /* WildcardExpansionBase.h in Headers */,
 				4D6049C61A6525DB00F9D8C5 /* Lock.h in Headers */,
 				4D35685C1954D8310069C92F /* SHA1.h in Headers */,
+				4DB7CDF12711E4AB002FBE35 /* StringLog.h in Headers */,
 				4D549CA71CE09BE5009EB624 /* Socket.h in Headers */,
 				4D08D20718CF289200EEFB59 /* Config.h in Headers */,
 				4D7423D91CE3D148008901CC /* UnownedPtr.h in Headers */,
@@ -2910,6 +2921,7 @@
 				4D604AFD1A6525DB00F9D8C5 /* ThreadSpecificData.h in Headers */,
 				4D60497D1A6525DB00F9D8C5 /* DirectoryLoader.h in Headers */,
 				4D6049411A6525DB00F9D8C5 /* Clocks.h in Headers */,
+				4DB7CDF32711E4AB002FBE35 /* StringLog.h in Headers */,
 				4D549DC51CE0AB03009EB624 /* SocketListener.h in Headers */,
 				4D549DC31CE0AB03009EB624 /* SocketAddressParser.h in Headers */,
 				4D92DC331D2FD0F200B05C77 /* HTTPParser.h in Headers */,
@@ -3182,6 +3194,7 @@
 				4D0946111BD8EE0D001AD9F5 /* CommandLineWildcardExpansion.h in Headers */,
 				4D604A931A6525DB00F9D8C5 /* StdioUtils.h in Headers */,
 				4D08D28318CF289200EEFB59 /* HashStream.h in Headers */,
+				4DB7CDF22711E4AB002FBE35 /* StringLog.h in Headers */,
 				4D09460E1BD8EE0D001AD9F5 /* CircularQueue.h in Headers */,
 				4D92DC2A1D2FD0F100B05C77 /* HTTPParser.h in Headers */,
 				4D92DC021D2FD0E200B05C77 /* HTTPSocketServer.h in Headers */,
@@ -3504,6 +3517,7 @@
 				4DA343C81D27EBB300A29EDF /* URL.cpp in Sources */,
 				4D549CBF1CE0AA4F009EB624 /* Base64Encoder.cpp in Sources */,
 				4D604C291A65264000F9D8C5 /* UnixSocketSupport.cpp in Sources */,
+				4DB7CDEE2711E4AB002FBE35 /* StringLog.cpp in Sources */,
 				4D7AF9EB1AADE2F400F51CF2 /* StreamLog.cpp in Sources */,
 				4D604C231A65264000F9D8C5 /* UnixProcess.cpp in Sources */,
 				4D604C0E1A65264000F9D8C5 /* UnixFileStream.cpp in Sources */,
@@ -3649,6 +3663,7 @@
 				4D549D921CE0AAE4009EB624 /* Data.cpp in Sources */,
 				4D604BD81A65263800F9D8C5 /* PthreadsTime.cpp in Sources */,
 				4D604AE81A6525DB00F9D8C5 /* ThreadPool.cpp in Sources */,
+				4DB7CDF02711E4AB002FBE35 /* StringLog.cpp in Sources */,
 				4D9514FE1EFFEBA0009A23C5 /* ArchiveFileSystem.cpp in Sources */,
 				4D92DC071D2FD0E200B05C77 /* HTTPServer.cpp in Sources */,
 				4D549D651CE0AAD9009EB624 /* JSONWriter.cpp in Sources */,
@@ -3830,6 +3845,7 @@
 				4D0236E81A336DD4009759E5 /* TextEncoding.cpp in Sources */,
 				4D93FFC518F0758100A51496 /* ZipWriter.cpp in Sources */,
 				4D92DBFD1D2FD0E200B05C77 /* HTTPServer.cpp in Sources */,
+				4DB7CDEF2711E4AB002FBE35 /* StringLog.cpp in Sources */,
 				4D9514FD1EFFEBA0009A23C5 /* ArchiveFileSystem.cpp in Sources */,
 				4D549D591CE0AAD8009EB624 /* JSONWriter.cpp in Sources */,
 				4D604AE71A6525DB00F9D8C5 /* ThreadPool.cpp in Sources */,

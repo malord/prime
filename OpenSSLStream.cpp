@@ -45,12 +45,12 @@ bool OpenSSLStream::connect(OpenSSLContext* clientContext, SocketStream* underly
     int err = SSL_connect(_ssl);
     if (err == -1) {
         closeSSL();
-        log->error(PRIME_LOCALISE("Connection to SSL server failed."));
+        log->error(PRIME_LOCALISE("Connection to SSL server failed. err: %d errno: %d"), (int) SSL_get_error(_ssl, err), (int) errno);
         return false;
     }
 
     if (err != 1) {
-        log->error(PRIME_LOCALISE("SSL handshake failed: %d err: %d."), err, SSL_get_error(_ssl, err));
+        log->error(PRIME_LOCALISE("SSL handshake failed: %d err: %d errno: %d."), err, (int) SSL_get_error(_ssl, err), (int) errno);
         return false;
     }
 
@@ -175,7 +175,7 @@ void OpenSSLStream::closeSSL()
     if (_ssl) {
 #if 0
                 ScopedYieldThread yield;
-                
+
                 while (SSL_shutdown(_ssl) == 0)
                     {}
 #else

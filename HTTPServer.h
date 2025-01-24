@@ -510,6 +510,7 @@ public:
                 : _alreadyCompressed(false)
                 , _isRawDeflated(false)
                 , _crc32(0x0badf00d)
+                , _uncompressedSize(0)
             {
             }
 
@@ -551,10 +552,19 @@ public:
 
             uint32_t getCRC32() const { return _crc32; }
 
+            SendStreamOptions& setUncompressedSize(uint32_t value)
+            {
+                _uncompressedSize = value;
+                return *this;
+            }
+
+            uint32_t getUncompressedSize() const { return _uncompressedSize; }
+
         private:
             bool _alreadyCompressed;
             bool _isRawDeflated;
             uint32_t _crc32;
+            uint32_t _uncompressedSize;
             bool _doNotBuffer;
         };
 
